@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UiDesign</string>
+    <string name="hello_femi">Hello femi</string>
+    <string name="good_morning">Good morning!</string>
+    <string name="hears">hears</string>
+    <string name="searchBox">Search</string>
+    <string name="ellipse_picture">Ellipse picture</string>
+    <string name="search">Search</string>
+    <string name="see_more">See more</string>
+    <string name="switch_text">Switch</string>
+    <string name="follow_me_button">Follow Oluwafemi</string>
+    <string name="message_me">Message</string>
+    <string name="address">Lagos Shangotedo</string>
+
+</resources>

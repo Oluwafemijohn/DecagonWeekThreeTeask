@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="black_background_color" format="color"/>
+    <attr name="white_background_color" format="color"/>
+    <attr name="white_text_color" format="color"/>
+    <attr name="black_text_color" format="color"/>
+    <attr name="whitish_grey" format="color"/>
+    <attr name="search_view" format="color"/>
+
+</resources>

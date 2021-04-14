@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--Buttons -->
+    <style name="buttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--style for grid images-->
+    <style name="grid_images">
+        <item name="android:layout_width">107dp</item>
+        <item name="android:layout_height">107dp</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+
+
+    <!--Layout width and hieght-->
+    <style name="layout_width_height">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+<!--    greeting-->
+    <style name="text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+<!--    Style for hear image-->
+    <style name="heart">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">36dp</item>
+    </style>
+
+<!--    style for Menu icon-->
+    <style name="menu">
+        <item name="android:layout_width">33dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+
+<!--switch button-->
+    <style name="switch_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+
+
+
+
+<!--    style for search -->
+    <style name="search_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+
+    <!--ellipse image-->
+    <style name="ellipse_image">
+        <item name="android:layout_width">128dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_marginTop">88dp</item>
+    </style>
+
+
+    <!--address -->
+    <style name="adress">
+        <item name="android:layout_width">142dp</item>
+        <item name="android:layout_height">29dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--    gridlayout -->
+    <style name="gridlayout">
+        <item name="android:layout_width">363dp</item>
+        <item name="android:layout_height">385dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:columnCount">3</item>
+        <item name="android:rowCount">3</item>
+    </style>
+
+
+    <!--proile name -->
+    <style name="profile_name">
+        <item name="android:layout_width">102dp</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>
+
+

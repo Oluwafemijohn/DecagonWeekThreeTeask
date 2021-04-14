@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--First container layer-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ellipsee"
+    tools:context=".MainActivity">
+
+    <!--    fixed element layout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topic"
+        style="@style/layout_width_height"
+        android:background="?attr/white_background_color"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!--greeting, hear, menu and switch-->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="@style/layout_width_height"
+            android:background="?attr/white_background_color"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="6dp">
+
+            <!--            constrain for menu and greeting-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/white_background_color">
+
+                <TextView
+                    android:id="@+id/good_mornin"
+                    style="@style/text"
+                    android:background="?attr/white_background_color"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/good_morning"
+                    android:textColor="?attr/black_text_color"
+                    android:textSize="@dimen/good_morning_font_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/heart"
+                    style="@style/heart"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/hears"
+                    android:src="@drawable/hearts"
+                    app:layout_constraintStart_toEndOf="@+id/good_mornin"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/menu"
+                    style="@style/menu"
+                    android:background="?attr/white_background_color"
+                    android:contentDescription="@string/hears"
+                    android:src="@drawable/menu"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.957"
+                    app:layout_constraintStart_toEndOf="@+id/heart"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="InvalidId,MissingConstraints" />
+
+                <Switch
+                    android:id="@+id/darkModeSwitch"
+                    style="@style/switch_button"
+                    android:text="@string/switch_text"
+                    app:layout_constraintBottom_toTopOf="@+id/heart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.922"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--  //    constrain for menu and greting  ///-->
+
+        </LinearLayout>
+        <!--   ///  greeting, hear, menu and switch  ///-->
+
+
+        <!--    search view layout-->
+        <LinearLayout
+            style="@style/layout_width_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <EditText
+                android:id="@+id/searchView"
+                style="@style/search_view"
+                android:background="@drawable/searchview_background"
+                android:drawableLeft="@drawable/ic_search"
+                android:hint="@string/search"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="34dp" />
+
+        </LinearLayout>
+        <!--///    search view layout///-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- ///    fixed layout end  ///-->
+
+
+    <!--    scroll container layout-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/white_background_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topic"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!--    container for images and buttons     -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollConstrainLayer"
+            style="@style/layout_width_height"
+            android:background="?attr/white_background_color">
+
+            <ImageView
+                android:id="@+id/ellipsePicture"
+               style="@style/ellipse_image"
+                android:background="@drawable/ellipsee"
+                android:contentDescription="@string/ellipse_picture"
+                android:textColor="@color/general_black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="512dp"
+                tools:layout_conversion_absoluteWidth="128dp" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/profile_name"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="Oluwafemi"
+                android:textColor="?attr/black_text_color"
+                android:textSize="@dimen/good_morning_font_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ellipsePicture"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/adress"
+                android:fontFamily="@font/roboto"
+                android:text="@string/address"
+                android:textColor="?attr/black_text_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/followMe"
+                style="@style/buttons"
+                android:backgroundTint="?attr/black_background_color"
+                android:drawableBottom="@drawable/follow_me_button"
+                android:fontFamily="@font/roboto"
+                android:text="@string/follow_me_button"
+                android:textColor="?attr/white_text_color"
+                app:cornerRadius="@dimen/border_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <Button
+                android:id="@+id/messageMe"
+                style="@style/buttons"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto"
+                android:text="@string/message_me"
+                android:textColor="@color/black"
+                app:cornerRadius="@dimen/border_radius"
+                app:layout_constraintBottom_toTopOf="@+id/GridLayout1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/followMe"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+
+            <GridLayout
+                android:id="@+id/GridLayout1"
+                style="@style/gridlayout"
+                android:background="?attr/white_background_color"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/messageMe"
+                tools:context=".GridXMLActivity">
+
+
+                <ImageView
+                    android:id="@+id/picture1"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture1" />
+
+                <ImageView
+                    android:id="@+id/picture2"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture2" />
+
+                <ImageView
+                    android:id="@+id/picture3"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture3" />
+
+                <ImageView
+                    android:id="@+id/picture4"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture4" />
+
+                <ImageView
+                    android:id="@+id/picture5"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture5" />
+
+                <ImageView
+                    android:id="@+id/picture6"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture6" />
+
+                <ImageView
+                    android:id="@+id/picture7"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture7" />
+
+                <ImageView
+                    android:id="@+id/picture8"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture8" />
+
+                <ImageView
+                    android:id="@+id/picture9"
+                    style="@style/grid_images"
+                    android:layout_margin="@dimen/grid_element_margin"
+                    android:src="@drawable/picture9" />
+
+
+            </GridLayout>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/buttons"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto"
+                android:text="@string/see_more"
+                android:textColor="@color/black"
+                app:cornerRadius="@dimen/border_radius"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/GridLayout1"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
