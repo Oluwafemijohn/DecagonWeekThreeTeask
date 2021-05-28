@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
 //        To remove the task bar from the view
         supportActionBar?.hide()
+        
 
 //      To switch the theme between light and dark mode
         var darkModeSwitch = findViewById<Switch>(R.id.darkModeSwitch)
